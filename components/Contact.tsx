@@ -4,11 +4,11 @@ const Contact = () => {
   return (
     <section id="contact" className="contactme font-Inter" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
       <div className="max-w-full px-8 lg:px-32 pt-32">
-        <h1 className="font-bold text-5xl lg:text-7xl">Let's Work Together</h1>
+        <h1 className="font-bold text-5xl lg:text-7xl">Let&#39;s Work Together</h1>
         <div className="bg-black w-full h-[1px] py-[1px] mt-10"></div>
       </div>
       <div className="footer max-w-full px-8 lg:px-32">
-        <p className="text-xl lg:text-2xl py-12">If you have any project, collaboration or idea that you would like to discuss, please contact us</p>
+        <p className="text-xl lg:text-2xl py-12">If you have any project, collaboration, or idea that you would like to discuss, please contact us</p>
         <p className="text-xl lg:text-2xl pb-4">
           <span className="font-bold">For inquiries</span>,{" "}
           <a href="mailto:akbarrbni03@gmail.com" className="hover:underline">
