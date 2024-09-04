@@ -116,7 +116,7 @@ const Navbar: React.FC = () => {
 
       <div className="hidden lg:flex gap-x-8">
         {navMenu.map((menu, index) => (
-          <a key={index} href={menu.url} className="py-2  link-underline:hover link-underline transition-all ease-in-out duration-200 hover:text-gray-900 text-lg">
+          <a key={index} href={menu.url} className="text-xl transition-all ease-in-out duration-200 hover:text-slate-900 py-2 link link-underline link-underline-black">
             {menu.name}
           </a>
         ))}
@@ -128,14 +128,14 @@ const Navbar: React.FC = () => {
           <motion.div className="fixed inset-0 bg-white text-black flex flex-col items-center justify-center z-[99]" variants={menuVariants} initial="initial" animate="animate" exit="exit" style={{ originY: 0 }}>
             <motion.ul variants={containerVariants} initial="initial" animate="open" exit="initial" className="flex flex-col items-center gap-y-4">
               {navMenu.map((menu, index) => (
-                <motion.li key={index} variants={linkVariants}>
-                  <a href={menu.url} className="text-2xl" onClick={() => setIsOpen(false)}>
+                <motion.li className="" key={index} variants={linkVariants}>
+                  <a href={menu.url} className="text-2xl transition-all ease-in-out duration-200 hover:text-slate-900 py-2 link link-underline link-underline-black" onClick={() => setIsOpen(false)}>
                     {menu.name}
                   </a>
                 </motion.li>
               ))}
               <motion.li variants={linkVariants}>
-                <Button color="bg-black text-white">Contact</Button>
+                <Button color="bg-black text-white ">Contact</Button>
               </motion.li>
             </motion.ul>
           </motion.div>
