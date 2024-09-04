@@ -116,7 +116,7 @@ const Navbar: React.FC = () => {
 
       <div className="hidden lg:flex gap-x-8">
         {navMenu.map((menu, index) => (
-          <a key={index} href={menu.url} className="text-xl transition-all ease-in-out duration-300 hover:text-slate-900 py-2 link link-underline link-underline-black ">
+          <a key={index} href={menu.url} className="text-xl transition-all ease-in-out duration-200 hover:text-slate-900 py-2 link link-underline link-underline-black ">
             {menu.name}
           </a>
         ))}
