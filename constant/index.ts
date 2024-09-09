@@ -2,7 +2,7 @@ import portofolio1 from "@/public/portofolio1.png";
 import portofolio2 from "@/public/portofolio2.png";
 import portofolio3 from "@/public/portofolio3.png";
 import portofolio4 from "@/public/portofolio4.png";
-import portofolio5 from '@/public/hero.png'
+import portofolio5 from "@/public/hero.png";
 import { title } from "process";
 
 export const myProject = [

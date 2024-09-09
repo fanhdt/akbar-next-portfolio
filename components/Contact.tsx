@@ -15,11 +15,7 @@ const Contact = () => {
             email: akbarrbni03@gmail.com
           </a>
         </p>
-        <p className="text-xl lg:text-2xl py-12">
-          Muhammad Akbar Robbani <br />
-          +62812-227-778-49 <br />
-          Bandung, Indonesia
-        </p>
+       
         <p className="text-xl lg:text-2xl py-4 mb-20">
           Or you can contact us via Instagram{" "}
           <a href="https://www.instagram.com/akbarrbni/" className="font-semibold hover:underline" target="_blank" rel="noopener noreferrer">

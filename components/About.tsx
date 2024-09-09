@@ -26,7 +26,7 @@ const About = () => {
           </div>
 
           <div className="flex justify-center lg:justify-end items-center py-16 lg:py-56">
-            <Image className="w-[70%] lg:w-[70%] bg-white" src={owner} alt="Owner" />
+            <Image className=" w-full lg:w-[70%] bg-white" src={owner} alt="Owner" />
           </div>
         </div>
       </div>

@@ -6,9 +6,11 @@ export interface ServiceCardProps {
   desc: string;
 }
 
-// common.type.ts
+// common.type.ts (File ini harus diubah sesuai kebutuhan Anda)
 export interface ButtonProps {
   color?: string;
   children?: React.ReactNode;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;  // Add this line to support onClick
+  onClick?: () => void;
+  href?: string;  // Tambahkan properti href
 }
+

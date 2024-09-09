@@ -106,7 +106,9 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`fixed w-full px-6 lg:px-32 flex justify-between items-center py-6 z-50 transition-all duration-300 ${isScrolled ? "bg-white text-black shadow-lg" : "bg-transparent text-white"}`}>
       <div className="font-Inter font-normal text-xl tracking-wide">
-        <a href="#home" onClick={() => handleNavigateToHome("#home")}>Akbarrbni Creative</a>
+        <a href="#home" onClick={() => handleNavigateToHome("#home")}>
+          Akbarrbni Creative
+        </a>
       </div>
 
       <motion.button className={`lg:hidden flex flex-col justify-center items-center w-8 h-8 z-[100] focus:outline-none ${isScrolled || isOpen ? "text-black" : "text-white"}`} onClick={toggleMenu}>
@@ -120,7 +122,9 @@ const Navbar: React.FC = () => {
             {menu.name}
           </a>
         ))}
-        <Button color="bg-black">Contact</Button>
+        <Button href="mailto:akbarrbni03@gmail.com" color="bg-black">
+          Contact
+        </Button>
       </div>
 
       <AnimatePresence>
@@ -129,13 +133,22 @@ const Navbar: React.FC = () => {
             <motion.ul variants={containerVariants} initial="initial" animate="open" exit="initial" className="flex flex-col items-center gap-y-4">
               {navMenu.map((menu, index) => (
                 <motion.li className="" key={index} variants={linkVariants}>
-                  <a href={menu.url} className="text-2xl transition-all ease-in-out duration-200 hover:text-slate-900 py-2 link link-underline link-underline-black" onClick={() => { setIsOpen(false); handleNavigateToHome(menu.url); }}>
+                  <a
+                    href={menu.url}
+                    className="text-2xl transition-all ease-in-out duration-200 hover:text-slate-900 py-2 link link-underline link-underline-black"
+                    onClick={() => {
+                      setIsOpen(false);
+                      handleNavigateToHome(menu.url);
+                    }}
+                  >
                     {menu.name}
                   </a>
                 </motion.li>
               ))}
               <motion.li variants={linkVariants}>
-                <Button color="bg-black text-white ">Contact</Button>
+                <Button href="mailto:akbarrbni03@gmail.com" color="bg-black text-white ">
+                  Contact
+                </Button>
               </motion.li>
             </motion.ul>
           </motion.div>
